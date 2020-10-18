@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1_task_generation_menu"
+        android:title="添加子任务" />
+    <item
+        android:id="@+id/item2_task_generation_menu"
+        android:title="任务确认" />
+</menu>

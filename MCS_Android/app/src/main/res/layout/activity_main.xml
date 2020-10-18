@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+        <ScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <RelativeLayout
+                android:layout_width="375dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:text="Node Information">
+
+
+                <TextView
+                    android:id="@+id/text0_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
+                    tools:style="@android:style/Widget.Material.Light.TextView.SpinnerItem" />
+
+                <LinearLayout
+                    android:id="@+id/layout1_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/text0_in_main">
+
+                    <Button
+                        android:id="@+id/btn1_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:autoText="false"
+                        android:gravity="center_vertical|center_horizontal|center"
+                        android:text="个人信息"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic"
+                        tools:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtview1_in_main"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/btn1_in_main"
+                        android:gravity="center"
+                        android:text="查看个人信息"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout2_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/layout1_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn2_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="节点信息"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtview2_in_main"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/txtview1_in_main"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="查看节点信息"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic"
+                        android:singleLine="false"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/text01_in_main"
+                    android:layout_below="@+id/layout2_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="区块信息"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
+                    tools:style="@android:style/Widget.Material.Light.TextView.SpinnerItem"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/layout3_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/text01_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn3_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="当前区块"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtview3_in_main"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="查看当前区块"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic"
+                        android:singleLine="false"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout4_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/layout3_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn4_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="上一区块"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtview4_in_main"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="查看上一区块信息"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic"
+                        android:singleLine="false"/>
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/text02_in_main"
+                    android:layout_below="@+id/layout4_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="众包功能"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
+                    tools:style="@android:style/Widget.Material.Light.TextView.SpinnerItem"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/layout5_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/text02_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn5_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="生成任务"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtview5_in_main"
+                        android:layout_width="285dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="生成一个MCS任务"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic"
+                        android:singleLine="false"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout6_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/layout5_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn6_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="接受任务"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtview6_in_main"
+                        android:layout_width="285dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="接受一个任务"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic"
+                        android:singleLine="false"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout6_1_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/layout6_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn6_1_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="选择节点"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtview6_1_in_main"
+                        android:layout_width="285dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="选择工作节点"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic"
+                        android:singleLine="false"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout7_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/layout6_1_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn7_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="执行任务"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtview7_in_main"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="执行任务并传递数据"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic"
+                        android:singleLine="false"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout8_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/layout7_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn8_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="结果预览"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtview8_in_main"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="查看执行结果"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic"
+                        android:singleLine="false"/>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/layout9_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/layout8_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn9_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="生成反馈"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/txtview9_in_main"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="对任务参与者进行反馈"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold|italic"
+                        android:singleLine="false"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text03_in_main"
+                    android:layout_below="@+id/layout9_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="测试功能"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
+                    tools:style="@android:style/Widget.Material.Light.TextView.SpinnerItem"
+                    />
+                <LinearLayout
+                    android:id="@+id/layout10_in_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/text03_in_main"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn101_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="65dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="正确消息"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/btn102_in_main"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="65dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="错误信息"
+                        android:textStyle="bold|italic" />
+
+
+
+
+                </LinearLayout>
+
+
+                <!--<ImageView
+                    android:id="@+id/image_in_main"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="nba" />
+
+                <ImageView
+                    android:id="@+id/image_in_main2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_toRightOf="@+id/image_in_main"/>
+
+                <Button
+                    android:id="@+id/knowMoreButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="know_more"
+                    android:layout_below="@+id/image_in_main2"/>
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_below="@+id/knowMoreButton"/>
+
+                <TextView
+                    android:id="@+id/contentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_below="@+id/titleTextView"/>-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
